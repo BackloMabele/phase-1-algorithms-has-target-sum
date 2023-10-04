@@ -1,17 +1,29 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for(i=0; i<array.length; i++) {
+    for(j=i+1; j<array.length; j++) {
+      if(array[i] + array[j] === target) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
-  Write the Big O time complexity of your function here
+  O(n^2)
 */
 
 /* 
-  Add your pseudocode here
+  write the hasTargetSum function structure
+  get to add the values of different number pairs in the array
+  compair the results with the integer value
 */
 
 /*
-  Add written explanation of your solution here
+  i have to write a function called hasTargetSum
+  the function should take in an array and an integer
+  the function should return true if any number pair in the array adds up to the integer value
+
 */
 
 // You can run `node index.js` to view these console logs
