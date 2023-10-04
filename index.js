@@ -1,6 +1,6 @@
 function hasTargetSum(array, target) {
-  for(i=0; i<array.length; i++) {
-    for(j=i+1; j<array.length; j++) {
+  for(let i=0; i<array.length; i++) {
+    for(let j=array.length-i; j>i; j--) {
       if(array[i] + array[j] === target) {
         return true;
       }
